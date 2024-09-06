@@ -1,0 +1,49 @@
+.nav-pills .nav-link.active {
+    background-color: #6c757d;
+  }
+
+ 
+
+  .comp{
+    width: 50vw;
+  }
+  
+ 
+
+  .card-body{
+    padding: 0px;
+    border-radius: 8px !important;
+    font-size: 13px;
+    
+
+  }
+
+  img{
+    border-radius: 8px 8px 0px 0px;
+
+  }
+  
+  .border-none{
+    color: #eb595f;
+  }
+
+  .btn-danger{
+    background-color: #eb595f !important;
+    width: 9rem;
+    height: 3rem;
+    border-radius:25px;
+
+
+  }
+
+
+  .shado{
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    width: 50vw;
+    margin-left: -25px;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
