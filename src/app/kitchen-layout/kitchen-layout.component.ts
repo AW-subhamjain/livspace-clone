@@ -21,24 +21,18 @@ export class KitchenLayoutComponent {
     { name: 'L-shaped', image: '/assets/L.png', selected: false },
     { name: 'Straight', image: '/assets/s.png', selected: false },
     { name: 'U-shaped', image: '/assets/u.png', selected: false },
-    { name: 'Parallel', image: '/assets/p1.png', selected: false }
+    { name: 'Parallel', image: '/assets/p.png', selected: false }
   ];
+
+  constructor(private router:Router){
+
+  }
 
   selectLayout(selectedLayout: Layout): void {
     this.layouts.forEach(layout => layout.selected = layout === selectedLayout);
   }
 
-  goBack(): void {
-    if (this.currentStep > 0) {
-      this.currentStep--;
-    }
-  }
 
-  goNext(): void {
-    if (this.currentStep < this.steps.length - 1) {
-      this.currentStep++;
-    }
-  }
 
 
 

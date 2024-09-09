@@ -1,0 +1,32 @@
+.card {
+    max-width: 330px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    ;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #4a4a4a;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .bi-check-circle-fill {
+    font-size: 1.1rem;
+  }
+
+  .cont{
+    height: 65vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+  }
+
+  .example::-webkit-scrollbar {
+    display: none;
+  }

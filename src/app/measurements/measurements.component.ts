@@ -8,13 +8,10 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./measurements.component.scss']
 })
 export class MeasurementsComponent {
-  measurementA: number = 8;
-  measurementB: number = 8;
+  numbers: number[] = Array.from({length: 10}, (_, i) => i + 3);
+  selectedNumber: number = 10;
 
-  constructor(private router: Router) {}
-
-  nextStep() {
-    // Pass data via a service or router state
-    this.router.navigate(['/package']);
+  selectNumber(number: number) {
+    this.selectedNumber = number;
   }
 }

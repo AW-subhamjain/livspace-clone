@@ -1,2 +1,32 @@
 <app-progress-checkpoint></app-progress-checkpoint>
-<router-outlet></router-outlet>
+
+
+<div class="d-flex align-items-center justify-content-center">
+    <div class="card comp ">
+     <div class="card-body p-5">
+        <div *ngIf="currentStep==1">
+       <h5 class="card-title text-center mb-1 fs-8">Select the layout of your kitchen</h5>
+       <p class="text-center mb-3 font-">
+        Want to know more. <a href="#" class="text-danger">Check here</a>
+      </p>
+        </div>
+        <div *ngIf="currentStep==2">
+       <h5 class="card-title text-center mb-1 fs-8">Now review the measurements for accuracy</h5>
+        </div>
+        <div *ngIf="currentStep==3">
+       <h5 class="card-title text-center mb-1 fs-8">Pick your package</h5>
+        </div>
+        <div *ngIf="currentStep==4">
+       <h5 class="card-title text-center mb-1 fs-8">Your kitchen estimate is almost ready!</h5>
+        </div>
+
+    
+     <router-outlet></router-outlet>
+ 
+       <div class="d-flex align-items-center justify-content-between shado pt-2 px-4 ">
+           <button class="btn border-none btn-large float-start" (click)="goBack()" >BACK</button>
+           <button class="btn btn-danger float-end" (click)="goNext()" >NEXT</button>
+       </div>
+     </div>
+    </div>
+ </div>

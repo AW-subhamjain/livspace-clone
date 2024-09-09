@@ -1,1 +1,23 @@
-<p>package works!</p>
+<div class="d-flex justify-content-center align-items-start cont mt-4">
+  <div>
+  <div *ngFor="let essential of content">
+<div class="card mb-2" [class.border-danger]="essential.selected" (click)="selectLayout(essential)">
+    <div class="card-body pb-0">
+      <div class="d-flex align-items-center">
+        <!-- <div class="form-check">
+          <input class="form-check-input " type="radio" name="kitchenType" id="essentials">
+        </div> -->
+        <h5 class="card-title mb-0 ms-3">{{ essential.title }}</h5>
+      </div>
+      <p class="card-text ms-3">{{ essential.description }}</p>
+      <img [src]="essential.image" class="img-fluid ">
+      <ul class="list-unstyled">
+        <li *ngFor="let feature of essential.features" class="">
+          <i class="bi bi-check-lg text-success me-2 fs-5"></i>{{ feature }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+  </div>

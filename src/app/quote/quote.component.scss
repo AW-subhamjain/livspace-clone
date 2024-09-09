@@ -1,0 +1,27 @@
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  transform: scale(.85) translateY(-1.8rem) translateX(0.15rem);
+    color: rgb(56, 56, 56) !important;
+}
+
+.form-floating > .form-control:focus ~ label {
+  color: rgb(56, 56, 56) !important;  /* Bootstrap primary color */
+}
+
+
+label{
+    color: #6e6e6e99 !important;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: black;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+}

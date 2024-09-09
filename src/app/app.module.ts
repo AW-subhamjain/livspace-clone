@@ -8,7 +8,7 @@ import { MeasurementsComponent } from './measurements/measurements.component';
 import { PackageComponent } from './package/package.component';
 import { QuoteComponent } from './quote/quote.component';
 import { ProgressCheckpointComponent } from './progress-checkpoint/progress-checkpoint.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,9 @@ import { ProgressCheckpointComponent } from './progress-checkpoint/progress-chec
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
